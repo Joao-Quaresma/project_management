@@ -1,0 +1,10 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title></title>
+  </head>
+  <body>
+    <p><%= task.content %></p>
+    <%= link_to "Delete", project_task_path(@project, task.id), method: :delete, data: { confirm: "Are you sure?"} %>
+  </body>
+</html>
