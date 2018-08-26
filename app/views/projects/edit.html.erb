@@ -1,6 +1,15 @@
-<h1>Editing Project</h1>
-
-<%= render 'form', project: @project %>
-
-<%= link_to 'Show', @project %> |
-<%= link_to 'Back', projects_path %>
+<!DOCTYPE html>
+<html>
+  <head>
+    <title></title>
+  </head>
+  <body>
+    <h1 class="todo_list_title">Edit Project</h1>
+    <div class="forms">
+      <%= render 'form', project: @project %>
+    </div>
+    <div class="links">
+      <%= link_to 'Cancel', projects_path %>
+    </div>
+  </body>
+</html>
